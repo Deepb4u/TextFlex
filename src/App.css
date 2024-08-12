@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width:900px){
+  .btn-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .btn-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+  }
+  .btn-3{
+    width: 185px;
+  }
+
+}
+@media (min-width:900px){
+  .btn-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    text-align:center;
+  }
+}

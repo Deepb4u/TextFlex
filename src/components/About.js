@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
 export default function About(){
-    // let myStyle={
-    //     color: 'black',
-    //     backgroundColor: 'white'
-    // }
     const [btnText, setBtnText] = useState('Light mode')
     const [myStyle, setMystyle] = useState({
         color: 'black',

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import '../App.css';
 
 
 export default function TextArea(props){
@@ -35,12 +36,17 @@ export default function TextArea(props){
                 <label htmlFor="MyBox" className="form-label "><h3> {props.heading}  </h3></label>
                 <textarea className={`form-control text-${props.txtColor} bg-${props.txtColor === 'light'? 'dark': 'light'}`} value={text} onChange={handleOnChange} id="MyBox" rows="12"></textarea>
             </div>
-            <div className="text-align-center">
-                <button className="btn btn-primary" onClick={handleUpClick}>Convert to UpperCase</button>
-                <button className="btn btn-primary mx-3" onClick={handleLowpClick}>Convert to LowerCase</button>
-                <button className="btn btn-primary" onClick={handlecopy}>Copy Text</button>
-                <button className="btn btn-primary mx-3" onClick={handleextraspaces}>Remove Extra Spaces</button>
+            <div className="btn-container text-align-center">
+                <div className="btn-main my-3">
+                    <button className="btn btn-primary" onClick={handleUpClick}>Convert to UpperCase</button>
+                    <button className="btn btn-primary mx-3" onClick={handleLowpClick}>Convert to LowerCase</button>
+                </div>
+                <div className="btn-main my-3">
+                    <button className="btn btn-primary btn-3" onClick={handlecopy}>Copy to clipboard</button>
+                    <button className="btn btn-primary mx-3" onClick={handleextraspaces}>Remove Extra Spaces</button>
+                </div>
             </div>
+
         </div>
         <div className={`container my-3 text-${props.txtColor}`}>
             <h2> Your text summary</h2>
