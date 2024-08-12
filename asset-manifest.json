@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.js": "/TextFlex/static/js/main.b18d4a3d.js",
+    "main.css": "/TextFlex/static/css/main.c0418d69.css",
+    "main.js": "/TextFlex/static/js/main.e9ec019f.js",
     "static/js/453.ed3810f9.chunk.js": "/TextFlex/static/js/453.ed3810f9.chunk.js",
     "index.html": "/TextFlex/index.html",
-    "main.b18d4a3d.js.map": "/TextFlex/static/js/main.b18d4a3d.js.map",
+    "main.c0418d69.css.map": "/TextFlex/static/css/main.c0418d69.css.map",
+    "main.e9ec019f.js.map": "/TextFlex/static/js/main.e9ec019f.js.map",
     "453.ed3810f9.chunk.js.map": "/TextFlex/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b18d4a3d.js"
+    "static/css/main.c0418d69.css",
+    "static/js/main.e9ec019f.js"
   ]
 }
