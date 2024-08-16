@@ -27,7 +27,7 @@ export default function TextArea(props){
         props.showAlart('Spaces has been removed','success')
     }
 
-    const [text, setText] = useState("Enter a text");
+    const [text, setText] = useState("");
 
     return(
     <>
@@ -46,13 +46,12 @@ export default function TextArea(props){
                     <button className="btn btn-primary mx-3" onClick={handleextraspaces}>Remove Extra Spaces</button>
                 </div>
             </div>
-
         </div>
         <div className={`container my-3 text-${props.txtColor}`}>
             <h2> Your text summary</h2>
-            <p>{text.split(" ").length} Words {text.length} charecters
+            <p>{text.split(/\s+/).filter((element)=>element.length!==0).length} Words {text.length} charecters
             </p>
-            <span>{0.008 * text.split(" ").length} Min</span>
+            <span>{0.008 * text.split(" ").filter((element)=>element.length!==0).length} Min</span>
         </div>
         <div className={`container my-3 text-${props.txtColor}`}>
             <h2>Preview</h2>
